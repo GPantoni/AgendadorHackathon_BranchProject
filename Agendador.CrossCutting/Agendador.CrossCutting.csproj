@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Class1.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Agendador.Application\Agendador.Application.csproj" />
+      <ProjectReference Include="..\Agendador.Domain\Agendador.Domain.csproj" />
+      <ProjectReference Include="..\Agendador.Infrastructure\Agendador.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="IoC\" />
+    </ItemGroup>
+
+</Project>
