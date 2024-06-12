@@ -12,6 +12,7 @@ public sealed class Mentor : Entity
     public string Email { get; private set; }
     public string HashedPassword { get; private set; }
     public ICollection<Squad>? Squads { get; set; }
+    public ICollection<Skill>? Skills { get; set; }
 
     public void ValidateDomain(string name, string email, string hashedPassword)
     {
